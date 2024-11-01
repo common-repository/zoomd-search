@@ -1,0 +1,75 @@
+.zdmain {
+    background-color: #A9A9A9;
+}
+
+.zdpage {
+    background-color: #FFFFFF;
+    /*margin-top: 25px;*/
+}
+
+.zdtitle {
+    font-size: 30px;
+}
+
+.zdtdlable {
+    text-align: left;
+    max-width: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.zdtdvalue {
+    text-align: left;
+    max-width: 200px;
+    width: 200px;
+}
+
+.zdaccordion-toggle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #51b92e;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.zdaccordion-content {
+    padding-left: 10px;
+    display: none;
+}
+
+.zdaccordion-content.default {
+    display: block;
+}
+
+.zdacewrapper {
+    display: flex;
+    height: 150px;
+    width: 800px;
+}
+
+.zdeditor {
+    flex: 0 0 60%;
+}
+
+.zdreturn {
+    padding-top: 40px;
+    padding-left: 10px;
+    flex: 1;
+}
+
+.zdfloatingtext {
+    size: 4;
+}
+
+.zoomd-h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #51b92e;
+    padding-left: 10px;
+}
+
+.zoomd-goto-setting-link {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}

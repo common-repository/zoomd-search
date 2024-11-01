@@ -1,0 +1,22 @@
+#search-btn {
+    /*top: 70px;*/
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 5px 5px 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 54px;
+    position: fixed;
+    /*right: 30px;*/
+    width: 54px;
+    z-index: 1000;
+    background: rgb(244, 67, 54);
+    border: rgb(255, 255, 255);
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+}
+
+#search-icon {
+    font-size: 36px;
+    line-height: 44px;
+}

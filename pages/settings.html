@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/zoomd-search.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js"></script>
+
+    <title>Zoomd Settings</title>
+</head>
+
+<body class="zdmain">
+
+
+    <div class="zdpage">
+
+        <!--Header-->
+        <div>
+            <h1>Zoomd Settings</h1>
+            <img align="right" src="<?php echo plugins_url('../images/logo.png', __FILE__)?>" scale="0">
+        </div>
+
+        <!--Account Info-->
+        <div>
+            <h1>Zoomd Account</h1>
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <td class="zdtdlable">
+                        <label>Your Zoomd ClientID: </label>
+                    </td>
+                    <td>
+                        <span>$clientId</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="zdtdlable">
+                        <label>Your Website URL: </label>
+                    </td>
+                    <td>
+                        <span>$siteurl</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="zdtdlable">
+                        <label>Your Email Address: </label>
+                    </td>
+                    <td>
+                        <span>$emailaddress</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="accordion">
+            <h4 class="zdaccordion-toggle">Accordion 1</h4>
+            <div class="zdaccordion-content default">
+                <p><input type="checkbox" name="chkreplacesearchbox" id="chkreplacesearchbox" value="checked" />Replace Wordpress build-in searchbox</p>
+                <p><input type="checkbox" name="chkraddfloatingicon" id="chkraddfloatingicon" value="unchecked" />Add floating search icon</p>
+                <div class="zdacewrapper">
+                    <pre id="editor" class="zdeditor">
+                        <!--<div>
+                            <input type="text" id="zsbox"  zoomdSearch='{"trigger":"OnEnter"}'/>
+                            <input type="button" value="Search" zoomdSearch='{"trigger":"OnClick", "forInput":"#zsbox"}'/>
+                        </div>-->
+                        
+                    </pre>
+                    <div id="return" class="zdreturn"></div>
+                    </br>
+                </div>
+            </div>
+            <h4 class="zdaccordion-toggle">Accordion 2</h4>
+            <div class="zdaccordion-content">
+                <p>Lorem ipsum dolor sit amet mauris eu turpis.</p>
+            </div>
+            <h4 class="zdaccordion-toggle">Accordion 3</h4>
+            <div class="zdaccordion-content">
+                <p>Vivamus facilisisnibh scelerisque laoreet.</p>
+            </div>
+        </div>
+
+
+
+
+        <!--Footer-->
+        <div>
+            <div>
+                <p style="color:navy" align="left">Your site is being indexed</p>
+                <p align="left">Thanks you for creating a Zoomd Search account!<br/>For support please contact <a href="mailto:support@zoomd.com">support@zoomd.com</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var editor = ace.edit("editor");
+        //editor.setTheme("ace/theme/twilight");
+
+        editor.session.setMode("ace/mode/html");
+
+        function showHTML() {
+            $('#return').html(editor.getValue());
+        }
+        // or use data: url to handle things like doctype
+        function showHTMLInIFrame() {
+            $('#return').html("<iframe style='width:400px;height:250px;border:0' src=" +
+                "data:text/html," + encodeURIComponent(editor.getValue()) +
+                "></iframe>");
+        }
+        editor.on("input", showHTMLInIFrame)
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('#accordion').find('.zdaccordion-toggle').click(function() {
+
+                //Expand or collapse this panel
+                $(this).next().slideToggle('fast');
+
+                //Hide the other panels
+                $(".zdaccordion-content").not($(this).next()).slideUp('fast');
+
+
+            });
+            showHTMLInIFrame();
+        });
+    </script>
+</body>
+
+</html>

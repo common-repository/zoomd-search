@@ -1,0 +1,114 @@
+# Copyright (C) 2017 Zoomd Search
+# This file is distributed under the same license as the Zoomd Search package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zoomd Search 2.1.0.19\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zoomd-search\n"
+"POT-Creation-Date: 2017-01-01 14:45+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-01-01 14:58+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: he_IL\n"
+
+#: classes/zoomd_settingsView.php:78
+msgid "Your site is being indexed"
+msgstr "האתר נסרק ויתכן כי הפעולה תימשך מספר שעות עד להשלמת האינדקס"
+
+#: classes/zoomd_settingsView.php:79
+msgid ""
+"Thanks you for creating a Zoomd Search account!, For feedback/support please "
+"contact <a href=\"mailto:support@zoomd.com\">support@zoomd.com"
+msgstr ""
+"תודה שיצרת חשבון Zoomd, בכל שאלה\\הצעה ניתן לפנות למייל support@zoomd.com"
+
+#: classes/zoomd_settingsView.php:86
+msgid "Zoomd Account"
+msgstr "חשבון Zoomd"
+
+#: classes/zoomd_settingsView.php:91
+msgid "Your Zoomd ClientID"
+msgstr "Zoomd ClientID שלך"
+
+#: classes/zoomd_settingsView.php:117
+msgid "Searchbox Settings"
+msgstr "הגדרות תיבת החיפוש"
+
+#: classes/zoomd_settingsView.php:118
+msgid ""
+"In order to implement your own search trigger, just add the following "
+"attribute to the triggering element:"
+msgstr ""
+"על מנת ליישם טריגר חיפוש משלך, פשוט להוסיף את התכונה הבאה ל TAG הרלוונטי:"
+
+#: classes/zoomd_settingsView.php:121
+msgid "Add floating search icon"
+msgstr "הוסף כפתור חיפוש צף"
+
+#: classes/zoomd_settingsView.php:123
+msgid "Replace Wordpress build-in searchbox"
+msgstr "החלף את תיבת החיפוש של וורדפרס"
+
+#: classes/zoomd_settingsView.php:123
+msgid "If Disabled the searchbox will use Wordpress search"
+msgstr "אם האפשרות מנוטרלת החיפוש יתבצע ע\"י וורדפרס"
+
+#: classes/zoomd_settingsView.php:124
+msgid "Search Button Text"
+msgstr "טקסט לחצן החיפוש"
+
+#: classes/zoomd_settingsView.php:124
+msgid "Search"
+msgstr "חיפוש"
+
+#: classes/zoomd_settingsView.php:125
+msgid "Restore default"
+msgstr "שחזר ברירת מחדל"
+
+#: classes/zoomd_settingsView.php:141
+msgid "Keep \"zoomdsearch\" attribute on the elements to trigger the search"
+msgstr ""
+
+#: classes/zoomd_settingsView.php:145
+msgid "Top Searches Settings"
+msgstr "הגדרות בר חיפושים נפוצים"
+
+#: classes/zoomd_settingsView.php:148
+msgid "Add at the bottom of the Post/Page"
+msgstr "בתחתית העמוד"
+
+#: classes/zoomd_settingsView.php:149
+msgid "Top search bar can be added by adding the"
+msgstr "ניתן להוסיף בר חיפושים נפוצים ע\"י הוספת"
+
+#: classes/zoomd_settingsView.php:149
+msgid "short code at any location inside a post/page"
+msgstr "Short Code בכל מקום בתוך פוסט\\עמוד"
+
+#: classes/zoomd_settingsView.php:153
+msgid "Save Changes"
+msgstr "שמור שינויים"
+
+#. Author of the plugin/theme
+#: plugin.php:176 plugin.php:181
+msgid "Zoomd"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Zoomd Search"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://zoomd.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A beautiful search experience, that engages your visitors, improves "
+"conversion and adds monetization to your site"
+msgstr ""
